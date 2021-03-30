@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app='app1'
+    ng-init="person = {fName: 'Amanda', lName: 'Thompson'}; capitals = [{city: 'Montgomery', state: 'Alabama'}, {city: 'Juneau', state: 'Alaska'}, {city: 'Phoenix', state: 'Arizona'}]">
+<!-- This is so angular knows where to start compiling; init is a directive so we can initialize with defined data  -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angular Tutorial</title>
+</head>
+
+<body>
+    <div ng-controller="ctrl1">
+        <!-- This div element is going to be a view, as long as the elements inside of it 
+        Our scope component will provide data to the view -->
+        <span>Values: </span>
+        <input type="text" ng-model="first" />
+        <input type="text" ng-model="second" />
+
+        <button ng-click="updateValue()">Sum</button>
+        <br><br>
+
+        {{calculation}}
+
+    </div>
+
+
+
+
+    <!-- Load the AngularJS library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+
+    <!-- Load the JS Module -->
+    <script src="js/exam1.js"></script>
+</body>
+
+</html>
