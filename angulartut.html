@@ -23,8 +23,14 @@
 
         {{calculation}}
 
-    </div>
+        <p>{{person.fName + " " person.lName }}</p>
 
+        <ul>
+            <li ng-repeat="capital in capitals">
+                {{'City: ' + capital.city + ', State: ' + capital.state}}
+            </li>
+        </ul>
+    </div>
 
 
 
